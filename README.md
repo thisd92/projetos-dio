@@ -1,3 +1,3 @@
-# Repo para Projetos de Bootcamp da DIO
+# Repo for Bootcamp Projects DIO
 
 Repositório feito para centralizar os projetos dos Bootcamps da DIO
