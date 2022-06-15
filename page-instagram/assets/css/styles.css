@@ -1,33 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
 body{
     background-color: #eee;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
 .container{
+    width: 60%;
+    height: 100vh;
     display: flex;
+    align-items: center;
+    justify-content: start;
 }
 
-#phones{
-    width: 450px;
-    height: 450px;
+.phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
 }
 
-#logo-insta{
-    width: 175px;
+#phone-img{
+    height: 45rem;
 }
 
 .login{
-    background-color: #fff;
-    width: 348px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
 }
 
-.login-hg{
-    height: 374px;
+.row-6{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+    min-height: 19rem;
+}
+
+.row-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+#logo-insta{
+    width: 10rem;
+}
+
+.login-bg{
+    background-color: #fff;
+}
+
+.row-badges{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
 }
 
 .div-badges{
     display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
 }
 
 .badges{
-    width: 200px;
+    height: 3rem;
+    width: 8rem;
+}
+
+#profile-icon{
+    width: 6rem;
+}
+
+#continue{
+    background-color: #4086e2;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.link{
+    color: #4086e2;
+}
+
+@media (max-width: 1024px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px){
+    body{
+        background-color: #fff;
+    }
+    
+    .container{
+        width: 90%;
+    }
+
+    .phone{
+        display: none;
+    }
+
+    .login{
+        width: 100%;
+    }
+
+    .row-6{
+        border: 0;
+    }
+
+    .row-3{
+        border: 0;
+    }
 }
