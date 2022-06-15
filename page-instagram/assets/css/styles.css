@@ -1,0 +1,33 @@
+body{
+    background-color: #eee;
+}
+
+.container{
+    display: flex;
+}
+
+#phones{
+    width: 450px;
+    height: 450px;
+}
+
+#logo-insta{
+    width: 175px;
+}
+
+.login{
+    background-color: #fff;
+    width: 348px;
+}
+
+.login-hg{
+    height: 374px;
+}
+
+.div-badges{
+    display: flex;
+}
+
+.badges{
+    width: 200px;
+}
