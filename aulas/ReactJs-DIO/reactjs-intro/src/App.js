@@ -1,24 +1,12 @@
-import './App.css';
-
-const soma = (a, b) => a + b
-const name = 'Thiago'
-
-function App() {
+function Hello(props) {
+  const { name } = props
     return (
-    <div>
       <div className="App">
         <header className="App-header">
           <h1>Hello, {name}</h1>
         </header>
-      </div>
-      <div>
-        <p>
-          Vamos fazer uma soma?<br/>
-          5 + 5 = {soma(5, 5)}
-        </p>
-      </div>
-    </div>
+      </div>      
   );
 }
 
-export default App;
+export default Hello;

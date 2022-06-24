@@ -1,11 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Hello from './App';
+import Componente from './components/Component';
+import Soma from './components/Soma'
+import SomaAlert from './components/SomaAlert'
+import Button from './components/Button';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
-    <App />
+    <Hello name="Thiago" />
+    <Soma />
+    <Componente>
+      <Button onClick={() => SomaAlert(5, 5)} button="Clique Aqui"/>
+    </Componente>
   </div>
 );
