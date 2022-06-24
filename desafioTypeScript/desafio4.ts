@@ -74,7 +74,14 @@ function validateLoginButton() {
   }
 }
 
+interface IHttp{
+  url?: any,
+  method?: any,
+  body?: null | undefined
+}
+
 class HttpClient {
+
   static async get({url, method, body = null}) {
     return new Promise((resolve, reject) => {
       let request = new XMLHttpRequest();
