@@ -1,12 +1,40 @@
-function Hello(props) {
-  const { name } = props
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1>Hello, {name}</h1>
-        </header>
-      </div>      
-  );
-}
+import React, {Component} from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
 
-export default Hello;
+class App extends Component{
+    
+    constructor(props){
+        super (props)
+        
+        this.state = {
+            clock: 1000,
+            copo: 'agua'
+        }
+    }
+  
+    componentDidMount(){
+      this.setState({
+        copo: 'suco'
+      })
+    }
+  
+    alterarCopo = () =>{
+        this.setState({
+            copo: 'refrigerante'
+        })
+    }
+  
+    render(){
+        const {clock} = this.state
+        return(
+            <div>
+                <h1>Relógio: {this.state.clock}</h1>
+                <button onClick={() => this.alterarCopo()}>{copo}</button>
+            </div>
+        )
+    }
+  }
+
+const rootElement = document.getElementById('root');
+ReactDOM.render(<App />, rootElement);

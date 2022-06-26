@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Hello from './App';
+import Hello from './components/Hello';
 import Componente from './components/Component';
 import Soma from './components/Soma'
 import SomaAlert from './components/SomaAlert'
