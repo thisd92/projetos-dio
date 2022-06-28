@@ -1,4 +1,6 @@
 import React from 'react';
+import Button from './Button';
+
 const App = () => {
     return(
         <>
@@ -8,6 +10,7 @@ const App = () => {
             </header>
             <div>
                 <p>Configurando e usando Webpack para fazer o bundle</p>
+                <Button name="Hello!" />
             </div>
         </>
     )
