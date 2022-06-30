@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack --mode development",
-    "start:dev": "webpack-dev-server"
+    "start:dev": "webpack-dev-server",
+    "start": "react-scripts start"
   },
   "keywords": [],
   "author": "",
@@ -23,10 +24,23 @@
     "webpack-dev-server": "^4.9.2"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.2",
     "react-scripts": "^5.0.1",
     "redux-devtools-extension": "^2.13.9"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
