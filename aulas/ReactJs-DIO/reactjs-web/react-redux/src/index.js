@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
 import { createStore } from "@reduxjs/toolkit";
-import { reducer } from "../redux/reducers";
+import { counterReducer } from "../redux/reducers";
 import App from "./App"
 import * as serviceWorker from './serviceWorker';
 

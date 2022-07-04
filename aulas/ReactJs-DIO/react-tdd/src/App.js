@@ -4,9 +4,7 @@ import Basic from './components/Basic';
 
 function App() {
   return (
-    <div className="App">
       <Basic name="Thiago" />
-    </div>
   );
 }
 
