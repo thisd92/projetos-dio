@@ -1,14 +1,15 @@
 import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import { App } from './App';
 
 test('renders the app with a quote and a button', () => {
     render(<App />);
 
-    const buttonEl = screen.getByRole('button');
+    const textEl = screen.getByText(/Speaker/);
     const imageEl = screen.getByRole('img');
-    const textEl = screen.getByRole('p');
+    const buttonEl = screen.getByRole('button');
 
-    expect(buttonEl).toBeInTheDocument();
-    expect(imageEl).toBeInTheDocument();
     expect(textEl).toBeInTheDocument();
+    expect(imageEl).toBeInTheDocument();
+    expect(buttonEl).toBeInTheDocument();
 });
