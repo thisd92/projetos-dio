@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import narutoImg from '../images/Naruto.webp';
+import narutoImg from '../images/naruto.png';
 import { Quotes } from '../components/Quotes';
 
 export function App(){
@@ -13,7 +13,7 @@ export function App(){
 
 const Content = styled.div`
     height: 100vh;
-    padding: 0 50px;
+    padding: 0 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +21,7 @@ const Content = styled.div`
 
 const NarutoImg = styled.img`
     max-width: 50vw;
-    min-height: 60vh;
+    max-height: 70vh;
     align-self: flex-end;
+    margin-right: 80px
 `;

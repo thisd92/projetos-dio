@@ -13,3 +13,7 @@ test('renders the app with a quote and a button', () => {
     expect(imageEl).toBeInTheDocument();
     expect(buttonEl).toBeInTheDocument();
 });
+
+test('calls a callback when button is pressed', () => {
+    const callback = jest.fn()
+});
