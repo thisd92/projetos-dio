@@ -2,19 +2,20 @@ import styled from 'styled-components';
 import { Button } from './Button';
 import { string } from 'prop-types';
 
-export const Quotes = (props) => {
+export const Quotes = ({ quote, speaker, onUpdate }) => {
     return(
         <Wrapper>
-            <Quote>{props.quote}</Quote>
-            <Speaker>{props.speaker}</Speaker>
-            <Button>Quote no Jutsu</Button>
+            <Quote>{quote}</Quote>
+            <Speaker>{speaker}</Speaker>
+            <Button onClick={onUpdate}>Quote no Jutsu</Button>
         </Wrapper>
     );
 };
 
 Quotes.propTypes = {
     quote: string,
-    speaker: string
+    speaker: string,
+    //onUpdate: func
 };
 
 const Wrapper = styled.div`
