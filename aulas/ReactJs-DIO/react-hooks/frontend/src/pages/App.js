@@ -5,7 +5,7 @@ import { Quotes } from '../components/Quotes';
 import { getQuote } from '../services/quoteService/quotesService';
 import jutsuSound from '../sounds/jutsu.mp3';
 
-const audio = new Audio(jutsuSound);
+const audioJutsu = new Audio(jutsuSound);
 
 export function App(){
     const isMounted = useRef(true);
@@ -19,7 +19,7 @@ export function App(){
         const quote = await getQuote();
 
         if(isMounted.current){
-            audio.play();
+            audioJutsu.play();
             setQuote(quote);
         };
     }
